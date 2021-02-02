@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
   @GetMapping("/fibonacci/{number}")
-  public ApiResult calcFib(@PathVariable int number) {
-    return new ApiResult(Long.toString(Calculator.fibonaci(number)));
+  public ApiRespone calcFib(@PathVariable int number) {
+    return new ApiRespone(Long.toString(Calculator.fibonaci(number)));
   }
 }

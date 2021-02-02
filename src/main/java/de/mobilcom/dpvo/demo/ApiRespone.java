@@ -1,18 +1,18 @@
 package de.mobilcom.dpvo.demo;
 
-public class ApiResult {
+public class ApiRespone {
     
     private int error;
     
     private String result;
 
     
-    public ApiResult(String result) {
+    public ApiRespone(String result) {
         this.error = 0;
         this.result = result;
     }
     
-    public ApiResult(int error, String result) {
+    public ApiRespone(int error, String result) {
         this.error = error;
         this.result = result;
     }
