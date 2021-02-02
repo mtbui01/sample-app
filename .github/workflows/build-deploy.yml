@@ -75,6 +75,8 @@ jobs:
       run: |
         echo "create release"
   deploy-git:
+    environment:
+      name: GIT
     name: Deploy to GIT
     runs-on: ubuntu-latest
     needs: create-release
@@ -88,6 +90,8 @@ jobs:
         echo "Deploy-Git"
 
   deploy-prod:
+    environment:
+      name: PROD
     name: Deploy to PROD
     runs-on: ubuntu-latest
     needs: deploy-git
